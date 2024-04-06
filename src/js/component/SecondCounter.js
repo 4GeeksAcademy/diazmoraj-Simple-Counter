@@ -10,33 +10,29 @@ const SecondCounter = (props) => {
     let digito6 = Math.floor(props.seconds/100000%10);
 
     return(
-        <>
-            <h1 className="text-center mt-5">{props.seconds}</h1>
-
-            <div className="container bg-dark text-white d-flex">
-                <div>
-                <i class="fa-solid fa-clock"></i>
-                </div>
-                <div>
-                <h3>{digito6}</h3>
-                </div>
-                <div>
-                <h3>{digito5}</h3>
-                </div>
-                <div>
-                <h3>{digito4}</h3>
-                </div>
-                <div>
-                <h3>{digito3}</h3>
-                </div>
-                <div>
-                <h3>{digito2}</h3>
-                </div>
-                <div>
-                <h3>{digito1}</h3>
-                </div>
+        <div className="container box-timer">
+            <div>
+                <h3><i class="fa-solid fa-clock"></i></h3>
             </div>
-        </>
+            <div>
+                <h3>{digito6}</h3>
+            </div>
+            <div>
+                <h3>{digito5}</h3>
+            </div>
+            <div>
+                <h3>{digito4}</h3>
+            </div>
+            <div>
+                <h3>{digito3}</h3>
+            </div>
+            <div>
+                <h3>{digito2}</h3>
+            </div>
+            <div>
+                <h3>{digito1}</h3>
+            </div>
+        </div>
     );
 };
 
